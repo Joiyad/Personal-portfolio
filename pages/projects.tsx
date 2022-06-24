@@ -5,11 +5,11 @@ import Content from "./components/projectContent";
 
 const projects = () => {
   return (
-    <>
+    <div>
         <Navbar />
         <Content />
         <Footer />
-    </>
+    </div>
   )
 }
 

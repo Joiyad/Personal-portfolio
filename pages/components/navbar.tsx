@@ -1,20 +1,13 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Header = () => {
   return (
     <div>
-      <nav className="flex items-center justify-between py-8 px-8 md:px-40">
+      <nav className="flex items-center justify-between py-6 px-8 md:px-40">
         <div className="flex items-center flex-shrink-0 text-white ">
-          <svg
-            className="fill-current h-8 w-8 mr-2"
-            width="54"
-            height="54"
-            viewBox="0 0 54 54"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-          </svg>
+          <Image src="/logo.png" alt="logo" width="40" height="40"/>
         </div>
         <div className="block lg:hidden">
           <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
@@ -30,7 +23,7 @@ const Header = () => {
         </div>
 
         <div className="hidden w-full  flex-grow lg:flex lg:items-center lg:w-auto">
-          <div className="lg:flex-grow mt-4 text-teal-200 text-xl md:flex md:justify-end gap-10">
+          <div className="lg:flex-grow mt-4 text-teal-200 text-xl md:flex md:justify-end gap-10 font-semibold">
           <Link
               href="/"
             >
