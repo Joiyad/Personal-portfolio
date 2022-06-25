@@ -22,7 +22,7 @@ const Header = () => {
           </button>
         </div>
 
-        <div className="hidden w-full  flex-grow lg:flex lg:items-center lg:w-auto">
+        <div className="hidden w-full flex-grow lg:flex lg:items-center lg:w-auto justify-end">
           <div className="lg:flex-grow mt-4 text-teal-200 text-xl md:flex md:justify-end gap-10 font-semibold">
           <Link
               href="/"

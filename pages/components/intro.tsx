@@ -7,7 +7,6 @@ import {BsFacebook} from 'react-icons/bs';
 import {BsTwitter} from 'react-icons/bs';
 import {BsLinkedin} from 'react-icons/bs';
 import {BsFillCaretRightFill} from 'react-icons/bs';
-import { Router } from "react-router-dom";
 
 const Intro = () => {
   let router = useRouter();

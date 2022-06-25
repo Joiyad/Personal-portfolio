@@ -69,16 +69,16 @@ const followContent = () => {
         </div>
       </div>
       <h2 className="text-white text-4xl text-center my-4">Contact me</h2>
-      <div className="flex justify-center gap-x-24 my-20 ">
-        <div className="p-4 text-2xl">
+      <div className="flex justify-center md:gap-x-24 my-20 ">
+        <div className="p-4 text-1xl md:text-2xl">
           <FiPhoneCall size={80} />
           <p>+91 8302009071</p>
           <p>+91 8740973621</p>
         </div>
-        <div className="p-4 text-2xl">
+        <div className="p-4 text-1xl md:text-2xl">
           <FiMail size={80} />
           <p>joiyadkhan75@gmail.com</p>
-          <p>joiyadkhan123@gmail</p>
+          <p>joiyadkhan123@gmail.com</p>
         </div>
       </div>
     </>
