@@ -10,7 +10,12 @@
   },
   "dependencies": {
     "@coreui/icons": "^3.0.0-alpha.0",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.5",
     "daisyui": "^2.17.0",
+    "emailjs-com": "^3.2.0",
     "next": "^12.1.6",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
