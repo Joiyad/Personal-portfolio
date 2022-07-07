@@ -35,7 +35,7 @@ const data = [
 export const Cardtemp = () => {
     let router = useRouter();
     return(
-  <div className="flex flex-col md:flex-row gap-8 md:gap-20 md:ml-40 mb-32 justify-center">
+  <div className="flex flex-col md:flex-row gap-8 md:gap-12 md:ml-20 mb-32 justify-center">
     {data.map(({ id, title, content1, content2, content3, link }) => (
       <div className="card w-80 bg-base-100 shadow-xl">
         <div className="card-body">

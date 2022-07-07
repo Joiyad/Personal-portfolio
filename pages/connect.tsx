@@ -1,5 +1,5 @@
 import Navbar from '../components/navbar';
-import FollowContent from '../components/followContent';
+import FollowContent from '../components/contact';
 
 const follow = () => {
   return (

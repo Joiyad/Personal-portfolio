@@ -6,18 +6,18 @@ import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
 import ConnectWithoutContactOutlinedIcon from '@mui/icons-material/ConnectWithoutContactOutlined';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import MenuIcon from '@mui/icons-material/Menu';
-// import { useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 const Navbar = () => {
+  const[showNav, setShowNav] = useState(false);
   return (
     <>
-      <div className="md:hidden p-8 cursor-pointer" id="menu-button">
-      {/* onClick={() => { menu.classList.toggle('hidden'); }} */}
+      <div className="md:hidden p-8 cursor-pointer" id="menu-button" onClick={() => {setShowNav(!showNav)}}>
         <MenuIcon />
       </div>
-      <div className="hidden md:block z-20 fixed w-full h-full md:w-16 md:hover:w-44 md:h-screen bg-slate-900 md:hover:bg-slate-900 bg-opacity-60 md:bg-transparent hover:transition-all overflow-hidden hover:border-r-2 border-white border-opacity-10"
-      id="menu">
+      <div className={showNav?'hidden':'block' + " md:w-16 z-20 fixed w-full h-full  md:hover:w-44 md:h-screen bg-slate-900 md:hover:bg-slate-900 bg-opacity-60 md:bg-transparent hover:transition-all overflow-hidden hover:border-r-2 border-white border-opacity-10"}
+      id="menu" >
         <nav>
           <div className="flex flex-col text-white">
             <a

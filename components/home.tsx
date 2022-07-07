@@ -21,7 +21,7 @@ const Intro = () => {
         <button onClick = {() => router.push('/profile')} className="mr-7 md:mr-12 px-4 py-2 my-12 md:my-8  hover:shadow-lg bg-gradient-to-r hover:from-purple-300 hover:to-blue-300 border-2 border-purple-500 text-purple-500 text-1xl md:text-2xl rounded-md font-semibold ">
           About me 
         </button>
-        <button onClick = {() => router.push('/profile')} className="px-8 py-2 my-12 md:my-8  hover:shadow-lg bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-zinc-200 text-1xl md:text-2xl rounded-md font-semibold">
+        <button onClick = {() => router.push('/connect')} className="px-8 py-2 my-12 md:my-8  hover:shadow-lg bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-zinc-200 text-1xl md:text-2xl rounded-md font-semibold">
           Hire me 
         </button>
         <div className="hidden md:flex my-12 md:my-8 text-purple-600"><BsFillCaretRightFill size={50}/></div>
