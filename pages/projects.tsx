@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import {Projects} from "../data/projects-data";
+import {Projects} from "../components/projectsContent";
 
 const projects = () => {
   return (

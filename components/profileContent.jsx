@@ -56,7 +56,7 @@ export const Cardtemp = () => {
               onClick={() => {
                 router.push(`${link}`);
               }}
-              className="btn w-full mt-4"
+              className="btn w-full mt-4 bg-purple-600 hover:bg-purple-900 border-white border-opacity-10 hover:border-white hover:border-opacity-10"
             >
               Visit
             </button>

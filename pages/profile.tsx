@@ -6,8 +6,8 @@ import GroupIcon from "@mui/icons-material/Group";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { useRouter } from "next/router";
-import { Cardtemp } from "../data/profile-data";
-import { Skills } from "../data/skills-data";
+import { Cardtemp } from "../components/profileContent";
+import { Skills } from "../components/skills";
 
 const profile = () => {
   let router = useRouter();
@@ -17,8 +17,8 @@ const profile = () => {
       {/* About me */}
       <div className="flex justify-center flex-col-reverse md:flex-row gap-20 px-8 md:pl-16 py-32">
         <div className="w-auto md:w-[600px] gap-5 text-center md:text-left">
-          <p className="text-5xl text-purple-800">Joiyad Khan</p>
-          <p className="text-4xl text-purple-700 mt-2">
+          <p className="text-5xl text-purple-600">Joiyad Khan</p>
+          <p className="text-4xl text-purple-800 mt-2">
             Student at NIT Hamirpur
           </p>
           <p className="text-2xl ">
@@ -33,7 +33,7 @@ const profile = () => {
                 "https://drive.google.com/drive/u/0/folders/1WTCjteZKU1-ap1At6HI2P7kYT6Ch2k-N"
               );
             }}
-            className="px-4 py-2 my-2 hover:shadow-lg bg-gradient-to-r from-blue-500 to-purple-500  hover:from-purple-500 hover:to-blue-500 text-zinc-200 rounded-md font-semibold"
+            className="px-4 py-3 my-4 hover:shadow-lg bg-gradient-to-r from-blue-500 to-purple-500  hover:from-purple-500 hover:to-blue-500 text-zinc-200 rounded-md font-semibold"
           >
             Download CV
           </button>
@@ -41,8 +41,8 @@ const profile = () => {
         <Image
           src="/profile.png"
           alt="profile"
-          width="320"
-          height="320"
+          width="300"
+          height="300"
           className="bg-gradient-to-tr from-transparent to-gray-900 rounded-lg shadow-lg shadow-black"
         />
       </div>
