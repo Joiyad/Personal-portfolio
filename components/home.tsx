@@ -11,9 +11,11 @@ import {BsFillCaretRightFill} from 'react-icons/bs';
 const Intro = () => {
   let router = useRouter();
   return (
+    <>
+    {/* <div className="absolute right-4 top-2"><Image src="/favicon.ico" alt="logo" width="30" height="30"/></div> */}
     <div className="flex justify-center pt-24">
       <div>
-        <h2 className="text-5xl md:text-8xl text-white text-center" >Hey There!<br/>I'm Joiyad Khan</h2>
+        <h2 className="text-5xl md:text-8xl text-white text-center" >Hey There!<br/>I am Joiyad Khan</h2>
         <h4 className="text-5xl font-semibold text-zinc-700 my-8 text-center md:my-4">
           MERN Stack Developer
         </h4>
@@ -36,6 +38,7 @@ const Intro = () => {
         
       </div>
     </div>
+    </>
   );
 };
 
