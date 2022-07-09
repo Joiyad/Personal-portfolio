@@ -1,11 +1,11 @@
 import Navbar from '../components/navbar';
-import FollowContent from '../components/contact';
+import Contact from '../components/contact.jsx';
 
 const follow = () => {
   return (
     <div>
         <Navbar />
-        <FollowContent/>
+        <Contact/>
     </div>
   )
 }

@@ -1,67 +1,59 @@
-import { FormGroup, FormLabel, InputBase } from "@mui/material";
-import React, { useState } from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { FiPhoneCall } from "react-icons/fi";
-import { FiMail } from "react-icons/fi";
+import SendIcon from '@mui/icons-material/Send';
+import emailjs from "emailjs-com"
+import { TextField } from "@mui/material";
 
 const followContent = () => {
-  const[email, setEmail] = useState("");
-  const[message, setMessage] = useState("");
-
-  const handleMessage = (e:any) =>{
-    let input = e.target.value;
-    setMessage(input);
-  }
-
-  const handleEmail = (e:any) =>{
-    let input = e.target.value;
-    setEmail(input);
-  }
-  const sendEmail=async(e:any)=>{
+  const sendEmail = (e) => {
     e.preventDefault();
-     const results=await fetch("/api/email",{
-      method:"post",
-       body:JSON.stringify({email:email,message:message})
-    });
-    if(results.status == 200){
-      console.log("successfull");
-    }
-    else{
-      console.log("Error");
-    }
-  }
+
+    emailjs.sendForm('gmail_joy', 'template_joy', e.target, 'oaiDMlLuueB5VjPQK')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  };
   return (
     <>
       <div className="m-auto">
         <h2 className="text-white text-4xl text-center py-20 font-semibold">
           Contact me
         </h2>
-        <form onSubmit={sendEmail} method="post">
-          <div className="w-[200px] md:w-[800px] flex gap-20  flex-wrap justify-center items-center bg-slate-800 border-white border-2 border-opacity-40 py-16 px-32 m-auto rounded-[20px] text-white font-semibold">
+        <form onSubmit={sendEmail}>
+          <div className="w-[250px] md:w-[800px] flex gap-8 md:gap-20  flex-wrap justify-center items-center bg-slate-800 border-white border-2 border-opacity-40 py-16 px-4 md:px-32 m-auto rounded-[5px] md:rounded-[20px] text-white font-semibold">
             <input
-              className="p-2 rounded-md bg-transparent border-white border-b-2 border-opacity-10"
-              type="email"
-              placeholder="email"
-              onChange={handleEmail}
-              value={email}
+              className="p-2 rounded-md bg-transparent border-white border-2 border-opacity-10"
+              type="text"
+              placeholder="name"
+              name="name"
             />
 
             <input
-              className="p-2 rounded-md bg-transparent border-white border-b-2 border-opacity-10"
+              className="p-2 rounded-md bg-transparent border-white border-2 border-opacity-10"
+              type="email"
+              placeholder="email"
+              name="email"
+            />
+
+            <textarea
+              className="p-2 w-64 rounded-md bg-transparent border-white border-2 border-opacity-10"
               type="textarea"
               placeholder="message"
-              onChange={handleMessage}
-              value={message}
+              cols={30}
+              rows={4}
+              name="message"
             />
             <button
               className="py-2 px-6 bg-blue-600 hover:bg-blue-900 hover:shadow-md rounded-md font-semibold"
               type="submit"
             >
-              Send it
+              Send <SendIcon className="hidden md:inline-block" fontSize="small"/>
             </button>
           </div>
         </form>
