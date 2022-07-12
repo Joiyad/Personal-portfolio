@@ -1,16 +1,27 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import {Projects} from "../components/projectsContent";
+import { FullStackProjects } from "../components/fullstack-projects";
+import { BlockProjects } from "../components/blockchain-projects";
+import { useState } from "react";
 
 const projects = () => {
+  const[isBlockchain, setIsBlockchain] = useState(false);
   return (
     <div>
       <Navbar />
-      <h2 className="text-white text-center text-4xl p-16 font-semibold mb-8">
-        Here are some of my Projects
-      </h2>
-      <Projects />
-      <Footer/>
+      <div className="flex justify-center py-20">
+        <div className="flex border-2 border-opacity-10 rounded-md font-semibold text-gray-300 cursor-pointer">
+          <div className="bg-slate-900 p-2 hover:bg-pink-400" onClick={() => {setIsBlockchain(false)}}>Full Stack Development</div>
+          <div className="bg-transparent p-2 hover:bg-pink-400" onClick={() => {setIsBlockchain(true)}}>Blockchain Development</div>
+        </div>
+      </div>
+      {
+        isBlockchain?
+        <BlockProjects/>
+        :
+        <FullStackProjects />
+      }
+      <Footer />
     </div>
   );
 };

@@ -1,13 +1,8 @@
 import Image from "next/image";
 import Navbar from "../components/navbar";
-import DoneIcon from "@mui/icons-material/Done";
-import VisibilityIcon from "@mui/icons-material/Visibility";
-import GroupIcon from "@mui/icons-material/Group";
-import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { useRouter } from "next/router";
 import { Cardtemp } from "../components/profileContent";
-import { Skills } from "../components/skills";
 
 const profile = () => {
   let router = useRouter();
@@ -21,7 +16,7 @@ const profile = () => {
           <p className="text-4xl text-purple-800 mt-2">
             Student at NIT Hamirpur
           </p>
-          <p className="text-xl mt-2">
+          <p className="text-xl mt-2 text-gray-300">
             I am 3rd year student at National Institute of Technology, Hamirpur.
             My passion is to become a software developer that can solve different industrial and real-life problems. I am interested in web development and blockchain development. I have many skills to contribute including React.js, Node.js, MongoDB, writing smart contracts and knowledge of ethereum. Want to know more about my technical skills
             <ArrowDownwardIcon />

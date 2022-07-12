@@ -10,14 +10,17 @@ import { useState } from "react";
 import Image from "next/image";
 
 const Navbar = () => {
-  const[showNav, setShowNav] = useState(false);
+  const [isOpen, setIsopen] = useState(false);
+
   return (
     <>
-      <div className="md:hidden p-8 cursor-pointer" id="menu-button" onClick={() => {setShowNav(!showNav)}}>
+      <div className="absolute top-6 right-12"><Image src="/favicon.ico" alt="logo" width="30" height="30" /></div>
+      <div className="md:hidden p-8 cursor-pointer text-white" id="menu-button" onClick={() => {setIsopen(!isOpen)}}  >
         <MenuIcon />
       </div>
-      <div className={showNav?'hidden':'block' + " md:w-16 z-20 fixed w-full h-full  md:hover:w-44 md:h-screen bg-slate-900 md:hover:bg-slate-900 bg-opacity-60 md:bg-transparent hover:transition-all overflow-hidden hover:border-r-2 border-white border-opacity-10"}
-      id="menu" >
+      <div className={isOpen?"hidden": "" + "md:block z-20 fixed w-full h-full  md:w-16 md:hover:w-44 md:h-screen bg-slate-900 md:hover:bg-slate-900 bg-opacity-60 md:bg-transparent hover:transition-all overflow-hidden hover:border-r-2 border-white border-opacity-10"}
+      id="menu" 
+      >
         <nav>
           <div className="flex flex-col text-white">
             <a

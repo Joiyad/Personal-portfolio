@@ -37,18 +37,18 @@ export const Cardtemp = () => {
     return(
   <div className="flex flex-col md:flex-row gap-8 md:gap-12 md:ml-20 mb-32 justify-center">
     {data.map(({ id, title, content1, content2, content3, link }) => (
-      <div className="card w-80 bg-base-100 shadow-xl">
+      <div className="w-80 bg-base-100 shadow-xl border border-white border-opacity-10 text-gray-300 rounded-[10px] p-6 bg-slate-800">
         <div className="card-body">
-          <h2 className="card-title text-purple-500">{title}</h2>
+          <h2 className="text-2xl text-center font-semibold my-2 text-purple-500">{title}</h2>
           <p>
-            <DoneIcon className="mr-2" /> {content1}
+            <DoneIcon className="mr-2 my-2" /> {content1}
           </p>
           <p>
-            <TipsAndUpdatesIcon className="mr-4" />
+            <TipsAndUpdatesIcon className="mr-4 my-2" />
             {content2}
           </p>
           <p>
-            <GroupIcon className="mr-4" />
+            <GroupIcon className="mr-4 my-2" />
             {content3}
           </p>
           <div className="card-actions justify-end">
@@ -56,7 +56,7 @@ export const Cardtemp = () => {
               onClick={() => {
                 router.push(`${link}`);
               }}
-              className="btn w-full mt-4 bg-purple-600 hover:bg-purple-900 border-white border-opacity-10 hover:border-white hover:border-opacity-10"
+              className="w-full mt-4 rounded-lg py-2 bg-purple-600 hover:bg-purple-900 border-white border-opacity-10 hover:border-white hover:border-opacity-10"
             >
               Visit
             </button>
