@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Navbar from "../components/navbar";
 import Intro from "../components/home";
 import Footer from "../components/footer";
+import { useState } from "react";
 
 const Home: NextPage = () => {
   return (

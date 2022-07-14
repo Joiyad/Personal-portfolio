@@ -10,57 +10,35 @@ import { useState } from "react";
 import Image from "next/image";
 
 const Navbar = () => {
-  const [isOpen, setIsopen] = useState(false);
+  const [isOpen, setIsopen] = useState(true);
 
   return (
     <>
-      <div className="absolute top-6 right-12"><Image src="/favicon.ico" alt="logo" width="30" height="30" /></div>
+      <div className="absolute top-8 md:top-6 right-12"><Image src="/favicon.ico" alt="logo" width="30" height="30" /></div>
       <div className="md:hidden p-8 cursor-pointer text-white" id="menu-button" onClick={() => {setIsopen(!isOpen)}}  >
         <MenuIcon />
       </div>
-      <div className={isOpen?"hidden": "" + "md:block z-20 fixed w-full h-full  md:w-16 md:hover:w-44 md:h-screen bg-slate-900 md:hover:bg-slate-900 bg-opacity-60 md:bg-transparent hover:transition-all overflow-hidden hover:border-r-2 border-white border-opacity-10"}
-      id="menu" 
-      >
+
+      {/* full navbar */}
+      <div className="hidden md:block z-20 fixed w-16 hover:w-44 h-screen bg-transparent bg-opacity-60 hover:transition-all overflow-hidden hover:border-r-2 border-white border-opacity-10" id="menuN" >
         <nav>
           <div className="flex flex-col text-white">
-            <a
-              href="/profile"
-              className="p-4 bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 flex flex-row"
-            >
-              <AccountCircleIcon className="mr-7" fontSize="large" />
-              <p>Profile</p>
-            </a>
-            {/* <a
-              href="/experience"
-              className="p-4 bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 flex flex-row"
-            >
-              <WorkOutlineIcon
-                className="mr-7"
-                fontSize="large"
-              />
-              <p>Experience</p>
-            </a> */}
-            <a
-              href="/projects"
-              className="p-4 bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 flex flex-row"
-            >
-              <LightbulbOutlinedIcon className="mr-7" fontSize="large" />
-              <p>Projects</p>
-            </a>
-            <a
-              href="/connect"
-              className="p-4 bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 flex flex-row"
-            >
-              <ConnectWithoutContactOutlinedIcon className="mr-7" fontSize="large" />
-              <p>Connect</p>
-            </a>
-            <a
-              href="/"
-              className="p-4 bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 flex flex-row"
-            >
-              <HomeOutlinedIcon className="mr-7" fontSize="large" />
-              <p>Back</p>
-            </a>
+            <a href="/profile" className="p-4 bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 flex flex-row"><AccountCircleIcon className="mr-7" fontSize="large" /><p>Profile</p></a>
+            <a href="/projects" className="p-4 bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 flex flex-row" ><LightbulbOutlinedIcon className="mr-7" fontSize="large" /><p>Projects</p></a>
+            <a href="/connect" className="p-4 bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 flex flex-row"><ConnectWithoutContactOutlinedIcon className="mr-7" fontSize="large" /><p>Connect</p></a>
+            <a href="/" className="p-4 bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 flex flex-row"><HomeOutlinedIcon className="mr-7" fontSize="large" /><p>Back</p></a>
+          </div>
+        </nav>
+      </div>
+
+      {/* menu mobile */}
+      <div className={isOpen ? "hidden" : "md:block z-20 fixed w-full h-full bg-slate-900 bg-opacity-60 hover:transition-all overflow-hidden hover:border-r-2 border-white border-opacity-10"} id="menuN" >
+        <nav>
+          <div className="flex flex-col text-white">
+            <a href="/profile" className="p-4 bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 flex flex-row"><AccountCircleIcon className="mr-7" fontSize="large" /><p>Profile</p></a>
+            <a href="/projects" className="p-4 bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 flex flex-row" ><LightbulbOutlinedIcon className="mr-7" fontSize="large" /><p>Projects</p></a>
+            <a href="/connect" className="p-4 bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 flex flex-row"><ConnectWithoutContactOutlinedIcon className="mr-7" fontSize="large" /><p>Connect</p></a>
+            <a href="/" className="p-4 bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 flex flex-row"><HomeOutlinedIcon className="mr-7" fontSize="large" /><p>Back</p></a>
           </div>
         </nav>
       </div>
