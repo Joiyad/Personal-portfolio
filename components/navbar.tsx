@@ -20,7 +20,7 @@ const Navbar = () => {
       </div>
 
       {/* full navbar */}
-      <div className="hidden md:block z-20 fixed w-16 hover:w-44 h-screen bg-transparent bg-opacity-60 hover:transition-all overflow-hidden hover:border-r-2 border-white border-opacity-10" id="menuN" >
+      <div className="hidden md:block z-20 fixed w-16 hover:w-44 h-screen bg-transparent hover:bg-slate-900 bg-opacity-60 hover:transition-all overflow-hidden hover:border-r-2 border-white border-opacity-10" id="menuN" >
         <nav>
           <div className="flex flex-col text-white">
             <a href="/profile" className="p-4 bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 flex flex-row"><AccountCircleIcon className="mr-7" fontSize="large" /><p>Profile</p></a>
