@@ -5,7 +5,6 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import SendIcon from '@mui/icons-material/Send';
 import emailjs from "emailjs-com"
-import { TextField } from "@mui/material";
 
 const followContent = () => {
   const sendEmail = (e) => {

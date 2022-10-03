@@ -44,7 +44,7 @@ export const Cardtemp = () => {
           <p><TipsAndUpdatesIcon className="mr-4 my-2" />{content2}</p>
           <p><GroupIcon className="mr-4 my-2" />{content3}</p>
           <div className="justify-end">
-            <button onClick={() => {router.push(`${link}`);}} className="w-full mt-4 rounded-lg py-2 bg-purple-600 hover:bg-purple-900 border-white border-opacity-10 hover:border-white hover:border-opacity-10">Know more</button>
+            <button onClick={() => {router.push(`${link}`);}} className="w-full mt-4 rounded-lg py-2 bg-purple-600 hover:bg-purple-900 border-white border-opacity-10 hover:border-white hover:border-opacity-10 font-sans tracking-wide font-semibold">Visit now</button>
           </div>
         </div>
       </div>

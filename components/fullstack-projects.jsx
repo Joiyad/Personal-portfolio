@@ -4,6 +4,7 @@ const fullStackProjects = [
     {id:1, title:"Team OJAS website", content:"A technical team website", image:"/bg-ojas.png", link:"https://github.com/teamOjasNith/teamOJAS"},
     {id:2, title:"Memorizz web app", content:"A social media app", image:"/bg-memorizz.png", link:"https://github.com/Joiyad/Memorizz"},
     {id:3, title:"Google-clone", content:"A clone of google search engine", image:"/bg-google.png", link:"https://github.com/Joiyad/Google-clone"},
+    {id:4, title:"To-do application", content:"An application for scheduling work", image:"/bg-todo.png", link:"https://github.com/Joiyad/Todos-list"},
 ];
 
 export const FullStackProjects = () => (

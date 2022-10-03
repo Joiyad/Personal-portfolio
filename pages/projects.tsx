@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar";
+import Navbar from "../components/sidebar";
 import Footer from "../components/footer";
 import { FullStackProjects } from "../components/fullstack-projects";
 import { BlockProjects } from "../components/blockchain-projects";
