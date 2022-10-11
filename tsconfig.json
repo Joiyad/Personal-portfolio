@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/contact.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/contact.tsx"],
   "exclude": ["node_modules"]
 }

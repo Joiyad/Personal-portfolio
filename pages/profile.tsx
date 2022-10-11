@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { useRouter } from "next/router";
 import { Cardtemp } from "../components/profileContent";
+import { Skills } from "../components/skills";
 
 const profile = () => {
   let router = useRouter();
@@ -22,6 +23,10 @@ const profile = () => {
       {/* My work */}
       <h2 className="text-white text-4xl text-center py-20 font-semibold">Recent Contributions</h2>
       <div className="flex justify-center my-8"><Cardtemp /></div>
+
+      {/* My Skills
+      <h2 className="text-white text-4xl text-center py-20 font-semibold">Skills</h2>
+      <div className="flex justify-center my-8"><Skills /></div> */}
     <Footer />
     </div>
   );

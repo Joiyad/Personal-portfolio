@@ -9,7 +9,7 @@ export const Skills = () => (
   <div className="flex flex-wrap justify-center my-20 gap-x-32 gap-y-16 px-52">
     {skills.map(({id, title, percent}) => (
         <div key={id}>
-        <p className="text-1xl">{title}</p>
+        <p className="text-1xl text-white">{title}</p>
         <div className="w-[200px] md:w-[600px] relative pt-1">
           <div className="overflow-hidden h-1 flex rounded bg-gray-300">
             <div className="bg-cyan-800" width={percent}></div>
