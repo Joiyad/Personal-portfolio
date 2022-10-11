@@ -13,6 +13,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Joiyad Khan</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="This is a personal portfolio website of Joiyad Khan."></meta>
       </Head>
         <Navbar />
         <Intro />
