@@ -7,7 +7,7 @@ const experience = () => {
     <div>
       <Navbar />
       <section>
-        <div className="bg-black text-white py-8 md:pr-6">
+        <div className="text-white py-8 md:pr-6">
           <h2 className="text-white text-4xl md:text-5xl text-center my-4">
             Work Experience
           </h2>
