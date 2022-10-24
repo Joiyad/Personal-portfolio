@@ -12,12 +12,21 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Joiyad Khan</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="This is a personal portfolio website of Joiyad Khan."></meta>
+        <meta
+          name="description"
+          content="Joiyad Khan, Student at National Institute of Technology(NIT), Hamirpur, Churu, Rajasthan"
+        />
+        <meta property="og:title" content="Joiyad Khan" />
+        <meta
+          property="og:description"
+          content="Joiyad Khan, Student at National Institute of Technology(NIT), Hamirpur, Churu, Rajasthan"
+        />
+        <meta property="og:url" content="https://joiyadkhan.netlify.app/" />
+        <meta property="og:type" content="website" />
       </Head>
-        <Navbar />
-        <Intro />
-        <Footer/>
+      <Navbar />
+      <Intro />
+      <Footer />
     </>
   );
 };
