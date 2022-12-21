@@ -28,8 +28,8 @@ const profile = () => {
       <div className="flex justify-center my-8"><Cardtemp /></div>
 
       {/* My Skills */}
-      <h2 className="text-white text-4xl text-center py-20 font-semibold">Skills</h2>
-      <div className="flex justify-center my-8"><Skills /></div>
+      {/* <h2 className="text-white text-4xl text-center py-20 font-semibold">Skills</h2>
+      <div className="flex justify-center my-8"><Skills /></div> */}
     <Footer />
     </div>
   );
