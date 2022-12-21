@@ -33,7 +33,7 @@ const followContent = () => {
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
               <div className="mt-8 overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2 border border-opacity-10 rounded-md">
-                  <div className="p-6 mr-2 bg-white">
+                  <div className="p-6 mr-2 bg-white rounded-md">
                     <h1 className="text-4xl sm:text-5xl text-gray-800 font-extrabold tracking-tight">
                       Get in touch
                     </h1>
