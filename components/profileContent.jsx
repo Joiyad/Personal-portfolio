@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 const data = [
   {
     id: 1,
-    title: "Content Writer at Quora",
+    title: "Content Writer Quora",
     content1: "140+ answers",
     content2: "690k+ views",
     content3: "owner of 2 spaces",
