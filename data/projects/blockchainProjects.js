@@ -1,0 +1,5 @@
+export const blockProjects = [
+    {id:1, title:"Custom Keyboard Generator", content:"A full stack ethereum application", image:"https://res.cloudinary.com/dvjbswt50/image/upload/v1676907707/Personal%20Portfolio/bg-keyboard-min_ihrwza.png", link:"https://github.com/Joiyad/Full-stack-Ethereum-app"},
+    {id:2, title:"NFT Quiz Dapp", content:"An application rewarding NFTs", image:"https://res.cloudinary.com/dvjbswt50/image/upload/v1676907707/Personal%20Portfolio/bg-nft-min_uxvijs.png", link:"https://github.com/Joiyad/NFT-quiz-app"},
+    {id:3, title:"Land Registry Dapp", content:"A decentralized land registery platform", image:"https://res.cloudinary.com/dvjbswt50/image/upload/v1676907706/Personal%20Portfolio/bg-land-min_nc9zyd.png", link:"https://github.com/emharsha1812/Land-Registry-Hackathon"},
+];

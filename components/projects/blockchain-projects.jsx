@@ -1,10 +1,5 @@
 import Image from "next/image";
-
-const blockProjects = [
-    {id:1, title:"Custom Keyboard Generator", content:"A full stack ethereum application", image:"/bg-keyboard.png", link:"https://github.com/Joiyad/Full-stack-Ethereum-app"},
-    {id:2, title:"NFT Quiz Dapp", content:"An application rewarding NFTs", image:"/bg-nft.png", link:"https://github.com/Joiyad/NFT-quiz-app"},
-    {id:3, title:"Land Registry Dapp", content:"A decentralized land registery platform", image:"/bg-land.png", link:"https://github.com/emharsha1812/Land-Registry-Hackathon"},
-];
+import {blockProjects} from "../../data/projects/blockchainProjects"
 
 export const BlockProjects = () => (
     <div className="flex flex-wrap justify-center gap-12 md:gap-x-36 md:gap-y-56 p-4 md:px-32">

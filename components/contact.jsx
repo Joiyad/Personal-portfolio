@@ -1,11 +1,6 @@
-import InstagramIcon from "@mui/icons-material/Instagram";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import SendIcon from "@mui/icons-material/Send";
 import emailjs from "emailjs-com";
 import Image from "next/image";
+import {followIconData} from '../data/followIconData'
 
 const followContent = () => {
   const sendEmail = (e) => {
@@ -40,7 +35,7 @@ const followContent = () => {
                     <p className="text-normal text-lg sm:text-2xl font-medium text-gray-600 my-2">
                       Write a message to start conversation
                     </p>
-                    <Image src='/connect2.gif' alt='connect' width='400' height='200' />
+                    <Image src='https://res.cloudinary.com/dvjbswt50/image/upload/v1676910250/Personal%20Portfolio/connect2_daeaie.gif' alt='connect' width='400' height='200' />
                   </div>
 
                   <form onSubmit={sendEmail} className="p-6 flex flex-col justify-center">
@@ -71,9 +66,6 @@ const followContent = () => {
                     </div>
 
                     <div className="flex flex-col mt-2">
-                      <label for="message" className="hidden">
-                        Number
-                      </label>
                       <textarea
                         type="textarea"
                         name="textarea"
@@ -97,38 +89,16 @@ const followContent = () => {
         <h2 className="text-white text-4xl text-center mb-20 font-semibold">
           Follow me
         </h2>
-        <div className="flex flex-wrap md:gap-x-10 justify-center mb-10">
-          <div className="border-2 hover:border-blue-600 rounded-3xl w-fit h-fit p-4 bg-slate-900">
+        <div className="flex flex-wrap gap-x-5 md:gap-x-10 justify-center mb-10">
+        {followIconData.map(({id, link, icon}) => (
+          <div key={id} className="border-2 hover:border-blue-600 rounded-3xl w-fit h-fit p-4 bg-slate-900">
             <a
-              href="/https://www.linkedin.com/in/joiyad-khan-3ab0bb203/"
+              href={link}
               className="text-white"
             >
-              <LinkedInIcon />
+              {icon}
             </a>
-          </div>
-          <div className="border-2 hover:border-blue-600 rounded-3xl w-fit h-fit p-4 bg-slate-900">
-            <a href="/insta" className="text-white">
-              <InstagramIcon />
-            </a>
-          </div>
-          <div className="border-2 hover:border-blue-600 rounded-3xl w-fit h-fit p-4 bg-slate-900">
-            <a href="/https://github.com/Joiyad" className="text-white">
-              <GitHubIcon />
-            </a>
-          </div>
-          <div className="border-2 hover:border-blue-600 rounded-3xl w-fit h-fit p-4 bg-slate-900">
-            <a
-              href="/https://www.facebook.com/joiyad.khan.5/"
-              className="text-white"
-            >
-              <FacebookIcon />
-            </a>
-          </div>
-          <div className="border-2 hover:border-blue-600 rounded-3xl w-fit h-fit p-4 bg-slate-900">
-            <a href="/insta" className="text-white">
-              <TwitterIcon />
-            </a>
-          </div>
+          </div>))}
         </div>
       </div>
     </>

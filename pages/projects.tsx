@@ -1,7 +1,7 @@
 import Navbar from "../components/sidebar";
 import Footer from "../components/footer";
-import { FullStackProjects } from "../components/fullstack-projects";
-import { BlockProjects } from "../components/blockchain-projects";
+import { FullStackProjects } from "../components/projects/fullstack-projects";
+import { BlockProjects } from "../components/projects/blockchain-projects";
 import { useState } from "react";
 
 const projects = () => {

@@ -20,7 +20,7 @@ const profile = () => {
             <button onClick={() => {router.push("https://drive.google.com/drive/u/0/folders/1WTCjteZKU1-ap1At6HI2P7kYT6Ch2k-N");}}className="px-4 py-3 my-6 hover:shadow-lg bg-gradient-to-r hover:from-purple-500 hover:to-blue-500 text-zinc-200 border border-purple-700 rounded-md font-semibold">Download CV</button>
         </div>
         <div className="rounded-md border-white border-2 h-[323px]">
-          <Image className="rounded-md" src="/joy-khan-2.jpeg" alt="profile" width="320" height="320"/></div>
+          <Image className="rounded-md" src="https://res.cloudinary.com/dvjbswt50/image/upload/v1676908715/Personal%20Portfolio/joy-khan-min_n434hg.jpg" alt="profile" width="320" height="320"/></div>
         </div>
 
       {/* My work */}
