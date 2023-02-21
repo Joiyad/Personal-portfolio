@@ -5,6 +5,7 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import { useRouter } from "next/router";
 import { Cardtemp } from "../components/profileContent";
 import { Skills } from "../components/skills";
+import Holopin from "../components/holopin"
 
 const profile = () => {
   let router = useRouter();
@@ -26,6 +27,9 @@ const profile = () => {
       {/* My work */}
       <h2 className="text-white text-4xl text-center py-20 font-semibold">Recent Contributions</h2>
       <div className="flex justify-center my-8"><Cardtemp /></div>
+
+        <h2 className="text-white text-4xl text-center py-20 font-semibold">Holopin Badges of Hacktoberfest 2023</h2>
+        <Holopin user="@joiyad411#" />
 
       {/* My Skills */}
       {/* <h2 className="text-white text-4xl text-center py-20 font-semibold">Skills</h2>
