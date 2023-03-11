@@ -59,24 +59,24 @@ const Intro = () => {
               <InstagramIcon fontSize="large" />
             </a>
             <a
-              href="/https://github.com/Joiyad"
+              href="https://github.com/Joiyad"
               className="hover:text-gray-300"
             >
               <GitHubIcon fontSize="large" />
             </a>
             <a
-              href="/https://www.linkedin.com/in/joiyad-khan-3ab0bb203/"
+              href="https://www.linkedin.com/in/joiyad-khan-3ab0bb203/"
               className="hover:text-gray-300"
             >
               <LinkedInIcon fontSize="large" />
             </a>
             <a
-              href="/https://www.facebook.com/joiyad.khan.5/"
+              href="https://www.facebook.com/joiyad.khan.5/"
               className="hover:text-gray-300"
             >
               <FacebookIcon fontSize="large" />
             </a>
-            <a href="/insta" className=" hidden md:block hover:text-gray-300">
+            <a href="insta" className=" hidden md:block hover:text-gray-300">
               <TwitterIcon fontSize="large" />
             </a>
           </div>
